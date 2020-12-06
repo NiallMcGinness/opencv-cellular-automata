@@ -31,7 +31,7 @@ int main(int argc, char* argv[])
         if (result.count("rule")) {
             int rule_flag = result["rule"].as<int>();
 
-            if (rule_flag > 0 && rule_flag < 255) {
+            if (rule_flag > 0 && rule_flag < 256) {
                 rule_selected = rule_flag;
                 cout << "building rule " << rule_selected << "\n";
             } else {
