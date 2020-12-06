@@ -35,13 +35,13 @@ int main(int argc, char* argv[])
                 rule_selected = rule_flag;
                 cout << "building rule " << rule_selected << "\n";
             } else {
-                cout << "rule must be between 0 and 254, picking rule 126 instead\n";
+                cout << "rule must be between 0 and 255, picking rule 126 instead\n";
             }
         }
 
         if (result.count("all")) {
 
-            cout << "building ca 0 - 254"
+            cout << "building ca 0 - 255"
                  << "\n";
 
             for (int i = 0; i < 255; i++) {
